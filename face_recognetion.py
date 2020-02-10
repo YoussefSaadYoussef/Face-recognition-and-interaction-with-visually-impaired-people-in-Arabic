@@ -1,25 +1,15 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Feb  8 11:59:51 2020
-
-@author: Click
-"""
-
-
 import face_recognition
 import cv2
 import numpy as np
 import pandas as pd
-#googlt text to speech lirary
+#google text to speech lirary
 from gtts import gTTS
 from playsound import playsound
 import speech_recognition as sr
 import os 
-from PIL import Image,ImageFont,ImageDraw
-import arabic_reshaper
-from bidi.algorithm import get_display
 
 ##########################################################################
+#--------------------------Database-------------------------------------
 ## This section represents the format which data should be saved  
 
 # Load a sample picture and learn how to recognize it.
@@ -67,7 +57,9 @@ face_names = []
 process_this_frame = True
 
 #########################################################################
-#Capture image from webcam
+#------------------------image to recognize-------------------------------
+
+#1. Capture image from webcam
 
 video_capture = cv2.VideoCapture(0)
 # Check success
@@ -84,7 +76,7 @@ plt.imshow(frameRGB)
 ###################################################################
 
 ######################################################################
-#if you want to load you own image 
+#2. if you want to load you own image 
 '''
 path = ''
 frame = cv2.imread(path)
