@@ -17,4 +17,6 @@
   - Method1 is to take the image through your webcam 
   - Method2 is to upload an image for the person you want to recognize 
   
+Demo link: https://youtu.be/1_UUsWlYZf0 
+
 Please if you face any problems please let me know.
